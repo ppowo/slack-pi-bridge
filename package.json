@@ -1,7 +1,7 @@
 {
   "name": "slack-pi-bridge",
   "version": "0.1.0",
-  "description": "A personal Slack bridge that uses pi to reply to selected DMs and react to presence changes.",
+  "description": "A personal Slack bridge that uses pi to reply to selected DMs.",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
@@ -27,7 +27,9 @@
   "dependencies": {
     "@mariozechner/pi-coding-agent": "latest",
     "@slack/web-api": "latest",
-    "dotenv": "latest"
+    "conf": "latest",
+    "dotenv": "latest",
+    "p-limit": "latest"
   },
   "devDependencies": {
     "esbuild": "latest"
