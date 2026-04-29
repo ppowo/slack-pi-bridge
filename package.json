@@ -1,0 +1,35 @@
+{
+  "name": "slack-pi-bridge",
+  "version": "0.1.0",
+  "description": "A personal Slack bridge that uses pi to reply to selected DMs and react to presence changes.",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js",
+    "build": "esbuild src/index.js --bundle --platform=node --format=esm --target=node20 --outfile=target/slack-pi-bridge.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppowo/slack-pi-bridge.git"
+  },
+  "keywords": [
+    "slack",
+    "pi",
+    "autoreply"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ppowo/slack-pi-bridge/issues"
+  },
+  "homepage": "https://github.com/ppowo/slack-pi-bridge#readme",
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "latest",
+    "@slack/web-api": "latest",
+    "dotenv": "latest"
+  },
+  "devDependencies": {
+    "esbuild": "latest"
+  }
+}
