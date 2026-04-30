@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node src/index.js",
     "check": "node --check src/index.js",
-    "build": "esbuild src/index.js --bundle --platform=node --format=esm --target=node20 --outfile=target/slack-pi-bridge.mjs"
+    "build": "esbuild src/index.js --bundle --platform=node --format=esm --target=node20 --banner:js='import { createRequire as __createRequire } from \"node:module\"; const require = __createRequire(import.meta.url);' --outfile=target/slack-pi-bridge.mjs"
   },
   "repository": {
     "type": "git",
